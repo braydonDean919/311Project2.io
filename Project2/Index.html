@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFL Team Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>NFL Team Explorer</h1>
+        <p>Explore NFL teams and keep up with league standings.</p>
+    </header>
+
+    <main>
+
+        <section class="controls">
+            <button id="fetchButton">Load NFL Teams</button>
+
+            <div class="search-container">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search a team (ex. Colts)"
+                >
+                <button id="searchButton">Search Team</button>
+            </div>
+        </section>
+
+        <div id="message"></div>
+
+        <section>
+            <h2>NFL Teams</h2>
+            <div id="teamContainer" class="team-grid">
+                <p>Click "Load NFL Teams" to get started.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>NFL Standings</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Team</th>
+                            <th>Conference</th>
+                            <th>Wins</th>
+                            <th>Losses</th>
+                            <th>Ties</th>
+                            <th>Win %</th>
+                        </tr>
+                    </thead>
+                    <tbody id="standingsBody">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
